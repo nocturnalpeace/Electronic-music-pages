@@ -1,0 +1,165 @@
+/*********/
+/* FONTS */
+/* ********* */
+
+
+@font-face {
+    font-family: SourceSans;
+    src: url(../assets/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+    font-family: SourceSans-bold; 
+    src: url(../assets/SourceSansPro-Bold.otf);
+}
+
+
+/********************/
+/* ALGEMENE STIJLEM */
+/********************/
+*{
+    font-family: SourceSans;
+    margin:0;
+    padding:0;
+}
+:focus{
+        border: 5px rgb(0, 38, 255) solid;
+}
+body{
+    background:rgb(15, 15, 15);
+    color: white;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin: 1em;
+    font-family: SourceSans-bold; 
+    color: white;
+    text-shadow: greenyellow 1px 0 10px;
+}
+
+.index h1{
+    font-size: 8em;
+    color: greenyellow;
+    margin: 0;
+    animation-name: draaien;
+    animation-duration: 7s;
+}
+
+@keyframes draaien {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+h2, h3 {
+    font-family: SourceSans-bold; 
+    color: darkcyan;
+    padding: 1em 0em 0.5em 0em;
+
+}
+
+
+header{
+    background-color: greenyellow;
+    padding: 1em;
+}
+
+header nav{
+    width: 80%;
+    margin:auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover{
+    padding: .2em;
+    border: 1px solid black;
+
+
+}
+
+.index{
+    overflow: hidden;
+}
+
+.index main{
+    background: url(/images/underground.jpeg) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: black;
+    padding: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.geschiedenis img, .opkomst img{
+    width: 300px;
+    padding:1em;
+   
+}
+.geschiedenis main section, .opkomst main section{
+    display: flex;
+    margin: 1em;
+}
+.opkomst main section{
+    flex-direction: column;
+}
+
+.geschiedenis h3{
+    color: white;
+    font-family: SourceSans;
+    font-size: 1em;
+}
+
+.opkomst main section div:nth-of-type(2){
+    display: flex;
+    padding-top: 2em;
+
+}
+
+.illegaal video{
+    width: 600px
+
+}
+
+.illegaal img{
+    padding: 5em;
+}
+
+input[type=submit]{
+    background-color: darkcyan;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
