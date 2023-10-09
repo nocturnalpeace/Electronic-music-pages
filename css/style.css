@@ -30,6 +30,12 @@ body{
     color: white;
 }
 
+body.index {
+    background-image: url(../images/underground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 h1{
     font-size: 3em;
     text-align: center;
@@ -95,9 +101,10 @@ header nav ul li a:hover{
 }
 
 .index main{
-    background: url(/images/underground.jpeg) no-repeat;
+    
     height: 90vh;
-    background-size: cover;
+
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,22 +121,29 @@ footer{
 
 main{
     display: flex;
-    width: 60%;
+    width: 90%;
+    max-width:40em;
     flex-direction: column;
     margin: auto;
 }
+
+
+/* geschiedenis */
 
 .geschiedenis img, .opkomst img{
     width: 300px;
     padding:1em;
    
 }
-.geschiedenis main section, .opkomst main section{
-    display: flex;
-    margin: 1em;
+
+.geschiedenis main section img.links{
+    float:left;
+
 }
-.opkomst main section{
-    flex-direction: column;
+
+.geschiedenis main section img.rechts{
+    float:right;
+
 }
 
 .geschiedenis h3{
@@ -138,22 +152,16 @@ main{
     font-size: 1em;
 }
 
-.opkomst main section div:nth-of-type(2){
+
+/* opkomst */
+
+.opkomst main section.naast-elkaar {
     display: flex;
     padding-top: 2em;
-
+    align-items: start;
 }
 
-.illegaal video{
-    width: 600px
-
-}
-
-.illegaal img{
-    padding: 5em;
-}
-
-input[type=submit]{
+.opkomst input[type=submit]{
     background-color: darkcyan;
     border: none;
     color: white;
@@ -162,4 +170,16 @@ input[type=submit]{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+
+/* illegaal */
+
+.illegaal video{
+    width: 600px
+
+}
+
+.illegaal img{
+    padding: 5em;
 }
